@@ -1,8 +1,8 @@
 
 from django.urls import path
 from django.conf.urls import include
-from . import views
+from newsboard import views
 
 urlpatterns = [
-    path('', include('views.py')),
+    path('', views.newsRender),
 ]

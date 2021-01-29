@@ -1,0 +1,10 @@
+{% extends index.html %}
+
+{% block content %}
+
+  {% for i in News %}
+  <h1>{{ i.title }}</h1>
+  <h2>{{i.description}}</h2>  
+  {% endfor %}
+
+{% endblock %}
