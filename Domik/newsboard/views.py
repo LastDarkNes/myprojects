@@ -3,5 +3,7 @@ from .models import New
 
 # Create your views here.
 def newsRender(request):
-    News = New.objects.all()
-    return render(request, "index.html", {"News" : News})
+
+    disc = New.objects.all()
+
+    return render(request, "newtemplate.html", {"disc" : disc})
