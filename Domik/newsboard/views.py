@@ -6,4 +6,4 @@ def newsRender(request):
 
     disc = New.objects.all()
 
-    return render(request, "newtemplate.html", {"disc" : disc})
+    return render(request, "html/newtemplate.html", {"disc" : disc})
