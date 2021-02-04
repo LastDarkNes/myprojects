@@ -4,12 +4,23 @@
   <head>
     <meta charset="utf-8">
     <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'newsboard/css/main.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <header>
-      <a href="#">Domic</a>
-      <a href="">sign in</a>
-      <a href="">sign up</a>
+      <ul id="menuList" type="none">
+        <li>
+          <div id="mainButton">
+            <a id="Domic" href="#">Domik</a>
+          </div>
+        </li>
+        <li>  <a class ="menuButtons" href="">sign in</a>  </li>
+        <li>  <a class ="menuButtons" href="">sign up</a>  </li>
+      </ul>
+
     </header>
     {% block content%}
     {% endblock%}
