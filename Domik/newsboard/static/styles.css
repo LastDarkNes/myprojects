@@ -12,7 +12,8 @@ header {
 
 body{
   background-color: #D9E7D0;
-  font-family: 'Titillium Web', sans-serif;
+  /* font-family: 'Titillium Web', sans-serif; */
+  font-family: 'Caveat', cursive;
 }
 
 ul {
@@ -61,7 +62,7 @@ a {
 .postTitle {
   margin-top: 0px;
   font-size: 48px;
-  background-color:#B4CEA4; 
+  background-color:#B4CEA4;
 }
 
 table {
@@ -71,7 +72,7 @@ table {
   width: 1060px;
   color: #206A5D;
   margin-top: 10px;
-  font-family: 'Titillium Web';
+  font-family: 'Caveat', cursive;
   font-size: 26px;
   filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.25));
   text-align: center;

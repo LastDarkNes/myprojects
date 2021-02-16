@@ -1,4 +1,4 @@
-{% extends 'html/index.html' %}
+{% extends 'newsboard/index.html' %}
 
 {% load static %}
 
@@ -7,7 +7,9 @@
   {% for i in disc %}
   <table class="post" align="center">
     {% if i.image %}<td><img src="{{ MEDIA_URL }}{{ i.image.url }}" alt=debug""></td>{% endif %}
-    <td><p class="postTitle">{{ i.title }}</p> {{ i.description }} </td>
+    <td><p class="postTitle">{{ i.title }}</p> {{ i.description }} <br>
+      {{ i.date }}
+     </td>
     <td></td>
   </table>
 
