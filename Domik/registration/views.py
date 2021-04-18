@@ -3,4 +3,4 @@ from django.shortcuts import render
 
 # Create your views here.
 def Reg(request):
-    pass
+    return render(request, 'registration/regtemplate.html')

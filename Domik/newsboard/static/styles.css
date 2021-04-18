@@ -116,3 +116,31 @@ figure {
   float: right;
   font-size: 20px;
 }
+
+#regplace {
+  font-size: 30px;
+  display: grid;
+  width: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+  color: #206A5D;
+  background-color: #BFDCAE;
+  filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#regcontent {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.Confirm {
+  color: #BFDCAE;
+  background-color: #206A5D;
+  border: 4px none;
+  padding: 5px;
+  margin-top:10px;
+  font-size: 20px;
+}
