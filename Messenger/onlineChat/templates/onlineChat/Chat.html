@@ -1,0 +1,13 @@
+{% extends 'onlineChat/index.html' %}
+
+{% load static %}
+
+{% block content %}
+{% for i in Messedges %}
+    <div class="message">
+      <p class="messagetext">{{ i.text }}</p>
+      <p class="date">{{ i.date }}</p>
+    </div>
+
+  {% endfor %}
+{% endblock %}
