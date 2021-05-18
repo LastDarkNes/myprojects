@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}"/>
     <link rel="stylesheet" href="static/styles.css">
   </head>
   <body>
@@ -17,10 +19,24 @@
     </header>
 
     <div class="chat">
-      {% block content %}{% endblock %}
+        {% block content %}{% endblock %}
+    </div>
+    <footer>
       <div id="formbckg">
-        A
-      </div>
+        <form id="form" action="/" method="post">
+          {% csrf_token %}
+
+          <div id="nameform" >
+            <p>Enter name:</p>
+              <input type="text"  name="name" value="">
+            </div>
+            <div id="messageform">
+              <textarea name="msgtext" rows="8" cols="80"></textarea>
+              <input id="submit" type="submit" name="" value="Send">
+            </div>
+          </form>
+        </div>
+    </footer>
     </div>
   </body>
 </html>

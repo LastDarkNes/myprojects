@@ -5,6 +5,9 @@
 {% block content %}
 {% for i in Messedges %}
     <div class="message">
+      {% if i.author != '' %}
+      <p class="messagetext">{{ i.author }}</p>
+      {% endif %}
       <p class="messagetext">{{ i.text }}</p>
       <p class="date">{{ i.date }}</p>
     </div>
